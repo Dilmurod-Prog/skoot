@@ -1,0 +1,12 @@
+@import '../../about/components/digital-era';
+main{
+    .digital-era{
+        &-item{
+            .txt-box{
+                button{
+                    margin-top: 40px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+main{
+    .digital-era{
+        position: relative;
+        margin-top: 120px;
+        background: url(../../../img/images/half-cicle-left.png) no-repeat left top;
+        .right-arrow{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}
+
+@media only screen and (max-width:950px) {
+    main{
+        .digital-era{
+            margin-top: 120px;  
+        }
+    }
+}
+@media only screen and (max-width:750px) {
+    main{
+        .digital-era{
+            overflow: hidden;
+            .right-arrow{
+                left: -150px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:650px){
+    main{
+        .digital-era{
+            background-image: none;
+        }
+    }
+}
+@media only screen and (max-width:550px){
+    main{
+        .digital-era{
+            margin-top: 120px;
+            .digital-era-item{
+                .img{
+                    width: 311px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import './variables';
+
+*{
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+}
+button{
+    font-family: 'Space Mono', monospace;
+}
+img{
+    display: block;
+}
+button{
+    background-color: $yellow;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    border: none;
+    transition: 0.2s;
+    border: 3px solid $yellow;
+    &:hover{
+        background-color: transparent;
+        color: $yellow;
+    }
+}
+ul{
+    li{
+        font-size: 15px;
+        font-weight: 700;
+        a{
+            text-decoration: none;
+            color: $grey;
+            transition: 0.3s;
+            &:hover{
+                color: $yellow;
+            }
+        }
+    }
+}
+
+
+
+.big-container{
+    max-width: 1560px;
+    margin: 0 auto;
+}
+.container{
+    max-width: 1166px;
+    padding-left: 30px;
+    padding-right:30px;
+    margin: 0 auto;
+}
+
+
+
+
+.df-c-sb{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.df-c-c{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.df-c{
+    display: flex;
+    align-items: center;
+}
+.df-sb{
+    display: flex;
+    justify-content: space-between;
+}
+.fl-dr{
+    flex-direction: column;
+}
+.df-fc-c{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.df{
+    display: flex;
+}
+
+
+
+.big-txt{
+    font-weight: 700;
+    font-size:56px;
+    line-height:56px;
+    letter-spacing: -2.5px;
+}
+.title-txt{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.142857074737549px;
+    color: $dark_grey;
+}
+.medium-txt{
+    font-size:40px;
+    font-weight: 700;
+    letter-spacing: -1.0714285373687744px;
+    color: $dark_grey;
+}
+.small-medium-txt{
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -1.0714285373687744px;
+    color: $dark_grey;
+}
+.btn-and-ul-txt{
+    font-size: 15px;
+    font-weight: 700;
+}
+.small-txt{
+    font-family: Lexend Deca;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+    color: $grey;
+}
+
+
+
+
+.learnMore-btn{
+    padding:11px 41px;
+}
+.getScootin-btn{
+    padding: 11px 36px;
+}
+.apply-btn{
+    padding: 11px 64px
+}

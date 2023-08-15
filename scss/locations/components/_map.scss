@@ -1,0 +1,232 @@
+main{
+    .map{
+        width: 100%;
+        position: relative;
+        display: flex;
+        margin-top: 120px;
+        .map-img{    
+            max-width: 1110px;
+            width: 100%;
+            img{
+                max-width: 100%;
+                height: auto;
+            }
+        }
+        .locations{
+            position: relative;
+            position: absolute;
+            width: 189px;
+            height: 72px;
+            background-color: $yellow;
+            .location-item{
+                position: absolute;
+                bottom: -20%;
+                left: calc(50% - 16px);
+                transform: rotate(45deg);
+                width: 32px;
+                height: 32px;
+                background-color:$yellow;
+            }
+        }
+        .new-york{
+            left: 15%;
+            top: 12%;
+        }
+        .london{
+            top: 13px;
+            left: 36%;
+        }
+        .yokohama{
+            top:13%;
+            right: 8%;
+        }
+        .jakarta{
+            top: 45%;
+            right: 15%;
+        }
+    }
+}
+
+@media only screen and (max-width:1166px) {
+    main{
+        .map{
+            margin-top: 120px;
+            .locations{
+                width: 170px;
+                height: 65px;
+                .location-item{
+                    width: 24px;
+                    height:24px;
+                    left: calc(50% - 12px);
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:980px) {
+    main{
+        .map{
+            margin-top: 120px;
+            .locations{
+                width: 150px;
+                height: 55px;
+            }
+        }
+    }
+}
+@media only screen and (max-width:830px){
+    main{
+        .map{
+            margin-top: 144px;
+            .locations{
+                width: 140px;
+                height: 50px;
+                .location-item{
+                    width: 20px;
+                    height:20px;
+                    bottom: -18%;
+                    left: calc(50% - 10px);
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:800px){
+    main{
+        .map{
+            .locations{
+                width: 130px;
+                height: 45px;
+            }
+        }
+    }
+}
+@media only screen and (max-width:750px){
+    main{
+        .map{
+            margin-top: 144px;
+            .locations{
+                font-size: 16px;
+                width: 130px;
+                height: 45px;
+                .location-item{
+                    width: 15px;
+                    height:15px;
+                    bottom: -17%;
+                    left: calc(50% - 7px);
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:670px){
+    main{
+        .map{
+            margin-top: 144px;
+            .locations{
+                font-size: 16px;
+                width: 120px;
+                height: 40px;
+            }
+        }
+    }
+}
+@media only screen and (max-width:650px){
+    main{
+        .map{
+            .locations{
+                width: 110px;
+                height: 35px;
+            }
+        }
+    }
+}
+@media only screen and (max-width:590px){
+    main{
+        .map{
+            margin-top: 144px;
+            .locations{
+                font-size: 16px;
+                width: 110px;
+                height: 35px;
+            }
+            .london{
+                width: 90px;
+                height: 25px;
+                .location-item{
+                    width: 10px;
+                    height:10px;
+                    bottom: -17%;
+                    left: calc(50% - 7px);
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:510px){
+    main{
+        .map{
+            margin-top: 144px;
+            .locations{
+                font-size: 12px;
+                width: 95px;
+                height: 25px;
+                .location-item{
+                    width: 10px;
+                    height:10px;
+                    bottom: -17%;
+                    left: calc(50% - 7px);
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:490px){
+    main{
+        .map{
+            .london{
+                width: 80px;
+                height: 20px;
+                .location-item{
+                    width: 8px;
+                    height: 8px;
+                    left: calc(50% - 4px);
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:420px){
+    main{
+        .map{
+            margin-top: 72px;
+            .locations{
+                width: 16px;
+                height: 16px;
+                border-radius: 100%;
+                p{
+                    display: none;
+                }
+                .location-item{
+                    display: none;
+                }
+            }
+            .new-york{
+                top:23%;
+                left: 25%;
+            }
+            .london{
+                top: 15%;
+                left: 43%;
+            }
+            .yokohama{
+                top: 30%;
+                right: 18%;
+            }
+            .jakarta{
+                top:57% ;
+                right: 23%;
+            }
+        }
+    }
+}

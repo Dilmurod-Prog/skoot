@@ -1,0 +1,67 @@
+main{
+    .page-title{ 
+        background: url(../../../img/images/home-hero-desktop.jpg) no-repeat center center;
+        background-size: 100% 100%;
+        padding: 153px 0;
+        &-item{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            row-gap: 40px;
+            h1{
+                max-width: 500px;
+                color: white;
+            }
+            p{
+                max-width: 405px;
+                color: white;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:768px) {
+    main{
+        .page-title{
+            background:url(../../../img/images/home-hero-tablet.jpg) no-repeat;
+            background-size: 100% 100%;
+            padding: 137px 0 217px 0;
+            &-item{
+                align-items: center;
+                h1{
+                    max-width: 573px;
+                    text-align: center;
+                }
+                p{
+                    max-width: 573px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:670px){
+    main{
+        padding-top: 73px;
+        .page-title{
+            padding: 115px 0 179px 0;
+            &-item{
+                row-gap: 28px;
+                h1{
+                    font-size: 40px;
+                    font-weight: 40px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:500px){
+    main{
+        padding-top: 72px;
+        .page-title{
+            background: url(../../../img/images/home-hero-mobile.jpg) no-repeat center center;
+            background-size: 100% 100%;
+        }
+    }
+}
+

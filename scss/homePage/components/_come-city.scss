@@ -1,0 +1,50 @@
+main{
+    .come-city{
+        position: relative;
+        margin-top: 160px;
+        background: url(../../../img/images/half-cicle-left.png) no-repeat left top;
+        .right-arrow{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}
+
+@media only screen and (max-width:950px) {
+    main{
+        .riding{
+            margin-top: 145px;  
+        }
+    }
+}
+@media only screen and (max-width:750px) {
+    main{
+        .come-city{
+            overflow: hidden;
+            .right-arrow{
+                left: -150px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:650px){
+    main{
+        .come-city{
+            background-image: none;
+        }
+    }
+}
+@media only screen and (max-width:550px){
+    main{
+        .come-city{
+            margin-top: 120px;
+            .riding-item{
+                .img{
+                    width: 311px;
+                }
+            }
+        }
+    }
+}

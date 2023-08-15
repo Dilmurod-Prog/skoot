@@ -1,0 +1,98 @@
+header{
+    padding: 22px 0;
+    background-color: white;
+    menu{
+        column-gap:58px;
+        background-color: white;
+        .gam{
+            display: none;
+            .x{
+                display: none;
+            }
+            .gam1{
+                display: none;
+                flex-direction: column;
+                width: 20px;
+                height: 16px;
+                .gam_item{
+                    width: 100%;
+                    height: 3px;
+                    background-color: $yellow;
+                }
+            }
+        }
+        .mobile-menu{
+            width: 256px;
+            height: calc(100vh - 72px);
+            display: none;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            position: absolute;
+            top: -800%;
+            z-index: -5;
+            background-color: #333A44;
+            padding: 64px 0 24px 32px;
+            transition: 0.3s;
+            ul{
+                flex-direction: column;
+                align-items: self-start;
+                row-gap: 24px;
+                li{
+                    a{
+                        color: white;
+                    }
+                }
+            }
+        }
+        nav{
+            ul{
+                column-gap: 32px;
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width:670px) {
+    .header{
+        padding: 0;
+        width: 100%;
+        position: fixed;
+        z-index: 2;    
+        menu{ 
+            width: 100%;
+            justify-content: space-between;
+            column-gap: 0;
+            align-items: center;
+            position: relative;
+            padding: 22px 0;
+            .gam{
+                position: absolute;
+                display: flex;
+                margin-left: 33px;
+                .gam1{
+                    display: flex;
+                }
+            }
+            .logo{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+            }
+            .mobile-menu{
+                display: flex;
+                button{
+                    display: block;
+                }
+            }
+            nav{
+                display: none;
+            }
+        }
+        button{
+            display: none;
+        }
+    }
+}
